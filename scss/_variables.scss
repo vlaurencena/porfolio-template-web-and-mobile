@@ -1,0 +1,38 @@
+$color-white: #ffffff;
+$color-black: #000000;
+$color-salmon: #ff6464;
+$color-ligth-blue: #edf7fa;
+$color-dark-blue: #142850;
+$color-gray: #8695A4;
+$color-turquoise: #00A8CC;
+
+%large-max-width-center {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+%home-section-title {
+
+  line-height: 3;
+  font-size: 1.125rem;
+  padding: 10px 0;
+  font-weight: 500;
+}
+
+%home-article-title {
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 1.36;
+
+}
+
+%home-article-preview {
+  line-height: 1.45;
+  margin-bottom: 27px;
+}
+
+%home-article-preview {
+  line-height: 1.45;
+  margin-bottom: 27px;
+}
+

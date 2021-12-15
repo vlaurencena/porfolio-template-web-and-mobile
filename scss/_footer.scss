@@ -1,0 +1,21 @@
+footer {
+  width: 100%;
+  height: 182px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: $color-dark-blue;
+  gap: 15px;
+  font-size: 0.875rem;
+
+  img {
+    filter: invert(13%) sepia(74%) saturate(912%) hue-rotate(188deg) brightness(94%) contrast(97%);
+  }
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
