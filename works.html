@@ -20,61 +20,18 @@
     <header>
         <nav class="navbar">
             <div class="navbar__links-container">
-                <a class="navbar__link--active" href="/index.html">Home</a>
-                <a href="/work.html">Work</a>
+                <a href="/index.html">Home</a>
+                <a class="navbar__link--active" href="/work.html">Work</a>
                 <a href="/blog.html">Blog</a>
                 <a href="#">Contact</a>
             </div>
             <img src="media/header-hamburguer-icon.png" alt="">
         </nav>
     </header>
-    <main class="home-container">
-        <section class="home-section-one">
-            <img class="home-section-one__image" src="media/john.png" alt="Picture of John">
-            <div class="home-section-one__text">
-                <h1>Hi, I am John, Creative Technologist</h1>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
-                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                <button>Download Resume</button>
-            </div>
-        </section>
-        <section class="home-section-two">
-            <div class="home-section-two__heading">
-                <h2>Recent posts</h2>
-                <a class="home-section-two__view-all" href="#">View all</a>
-            </div>
-            <div class="home-section-two__articles">
-                <article>
-                    <h3>Making a design system from scratch</h3>
-                    <div class="home-section-two__articles__details">
-                        <div>12 Feb 2020</div>
-                        <span>|</span>
-                        <ul class="home-section-two__articles__categories">
-                            <li>Design</li>
-                            <li>Pattern</li>
-                        </ul>
-                    </div>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
-                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                </article>
-                <article>
-                    <h3>Creating pixel perfect icons in Figma</h3>
-                    <div class="home-section-two__articles__details">
-                        <div>12 Feb 2020</div>
-                        <span>|</span>
-                        <ul class="home-section-two__articles__categories">
-                            <li>Design</li>
-                            <li>Pattern</li>
-                        </ul>
-                    </div>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
-                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                </article>
-            </div>
-        </section>
-        <section class="home-section-three">
-            <h2>Featured work</h2>
-            <article>
+    <main class="work-container">
+        <h1>Work</h1>
+        <section>
+            <article class="work-container__article">
                 <img src="media/article-designing-dashboards.png" alt="Designing Dashboards">
                 <div>
                     <h3>Designing Dashboards</h3>
@@ -86,7 +43,7 @@
                         duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                 </div>
             </article>
-            <article>
+            <article class="work-container__article">
                 <img src="media/article-vibrant-portraits.png" alt="Designing Dashboards">
                 <div>
                     <h3>Vibrant Portraits of 2020</h3>
@@ -98,13 +55,25 @@
                         duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                 </div>
             </article>
-            <article>
-                <img src="media/article-days-malayalam-type.png" alt="Designing Dashboards">
+            <article class="work-container__article">
+                <img src="media/article-days-malayalam-type.png" alt="Days of Malayalam type">
                 <div>
                     <h3>36 Days of Malayalam type</h3>
                     <ul>
                         <li class="badge-dark">2018</li>
                         <li class="text-gray">Typography</li>
+                    </ul>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </article>
+            <article class="work-container__article">
+                <img src="media/article-vibrant-portraits.png" alt="Designing Dashboards">
+                <div>
+                    <h3>Components</h3>
+                    <ul>
+                        <li class="badge-dark">2018</li>
+                        <li class="text-gray">Components</li>
                     </ul>
                     <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
                         duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
@@ -121,6 +90,14 @@
         </div>
         <p>Copyright ©2020 All rights reserved </p>
     </footer>
+    <script>
+        var styleElement = document.createElement('style');
+        styleElement.id = 'remove-scroll-style';
+        styleElement.textContent =
+            'html::-webkit-scrollbar{display:none !important}' +
+            'body::-webkit-scrollbar{display:none !important}';
+        document.getElementsByTagName('body')[0].appendChild(styleElement);
+    </script>
 </body>
 
 </html>
