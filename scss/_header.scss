@@ -11,7 +11,10 @@
   &__links-container {
     display: none;
   }
+}
 
+.navbar__links-container > a.navbar__link--active {
+  color: red;
 }
 
 @media (min-width: 900px) {
