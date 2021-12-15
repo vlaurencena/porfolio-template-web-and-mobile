@@ -1,5 +1,4 @@
 .blog-container {
-
   margin: 0 18px;
 
   h1 {
@@ -23,11 +22,11 @@
     .article__info {
       display: flex;
       gap: 14px;
-  
+
       &__categories {
         color: $color-gray;
         display: flex;
-  
+
         > :not(:last-child)::after {
           content: ",\00a0";
         }
@@ -38,9 +37,10 @@
       margin: 12px 0 24px;
     }
   }
-
-  
 }
 
 @media (min-width: 900px) {
+  .blog-container {
+    margin: 0 235px;
+  }
 }
